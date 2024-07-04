@@ -1,26 +1,28 @@
 main() {
-  Parent p = Parent();
-  p.name = "Jacques";
-  p.display();
-
   Child c = Child();
   c.name = "FERUZI";
+  c.age = 11;
   c.display();
 }
 
 class Parent {
   //properties
   String? name;
+  int? age;
 
   //Method
   void display() {
-    print("$name is registered");
+    print("$name is under age");
   }
 }
 
 class Child extends Parent {
   @override
   void display() {
-    print("$name is not registered");
+    if (age! >= 18) {
+      print("$name is an adult");
+    } else {
+      print("$name is under age!");
+    }
   }
 }
