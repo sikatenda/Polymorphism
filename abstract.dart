@@ -15,6 +15,7 @@ main() {
 
   //assign values to the class properties
   r.name = name;
+  r.fee = double.parse(fee);
 
   //using the class method
   r.courseName();
