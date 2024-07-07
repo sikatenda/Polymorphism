@@ -1,12 +1,20 @@
-import 'dart:typed_data';
+import 'dart:io';
 
 main() {
   //create object class
   Registration r = Registration();
 
+  //declare variable
+  var name, fee;
+
+  //prompting users for input
+  print("Please enter the course name");
+  name = stdin.readLineSync();
+  print("Please enter the course fee");
+  fee = stdin.readLineSync();
+
   //assign values to the class properties
-  r.name = "Programming";
-  r.fee = 2500.00;
+  r.name = name;
 
   //using the class method
   r.courseName();
@@ -30,6 +38,6 @@ class Registration extends Course {
 
   @override
   void courseFee() {
-    print("Thecourse fee is $fee");
+    print("The course fee is $fee");
   }
 }
