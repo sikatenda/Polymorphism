@@ -1,7 +1,16 @@
+import 'dart:io';
+
 main() {
+  //classe decleration
   Person p = Person();
-  p.church = 'EDV';
-  p.school = 'IBM';
+
+  //getting input from the user
+  print('Please enter the church name');
+  p.church = stdin.readLineSync();
+  print('Please enter the school name');
+  p.school = stdin.readLineSync();
+
+  //using mixin method
   p.churchName();
   p.schoolName();
 }
