@@ -1,8 +1,16 @@
+import 'dart:io';
+
 main() {
+  //classe decleration
   Details d = Details();
-  d.name = 'jacques';
-  d.surname = 'sikatenda';
-  d.profession = 'student';
+
+  //getting input from the user
+  print('Please enter the name');
+  d.name = stdin.readLineSync();
+  print('Please enter the surname');
+  d.surname = stdin.readLineSync();
+  print('Please enter the profession');
+  d.profession = stdin.readLineSync();
   d.ID();
   d.activity();
 }
