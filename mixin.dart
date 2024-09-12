@@ -15,6 +15,7 @@ main() {
   p.schoolName();
 }
 
+//mixin method that display the church name
 mixin Church {
   String? church;
   void churchName() {
@@ -22,6 +23,7 @@ mixin Church {
   }
 }
 
+//mixin method that display the school name
 mixin School {
   String? school;
   void schoolName() {
