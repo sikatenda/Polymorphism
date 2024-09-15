@@ -18,8 +18,13 @@ main() {
 //mixin method that display the church name
 mixin Church {
   String? church;
+  int? number;
   void churchName() {
     print("the church name is $church");
+  }
+
+  void mod() {
+    print("the remain number is $number");
   }
 }
 
