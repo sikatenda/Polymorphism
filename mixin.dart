@@ -4,6 +4,8 @@ main() {
   //classe decleration
   Person p = Person();
 
+  String? letter = 'a';
+
   //getting input from the user
   print('Please enter the church name');
   p.church = stdin.readLineSync();
@@ -13,6 +15,12 @@ main() {
   //using mixin method
   p.churchName();
   p.schoolName();
+
+  if (letter == 'a') {
+    p.churchName();
+  } else {
+    p.schoolName();
+  }
 }
 
 //mixin method that display the church name
